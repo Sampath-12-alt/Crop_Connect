@@ -1,0 +1,7 @@
+<%- include('../layout/boilerplate') %>
+<h1>Error <%= statusCode %></h1>
+<p><%= message %></p>
+<% if (stack) { %>
+<pre><%= stack %></pre>
+<% } %>
+<a href="/">Return home</a>
